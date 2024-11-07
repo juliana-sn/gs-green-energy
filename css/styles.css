@@ -1,0 +1,36 @@
+:root{
+    --bg-color: #fffffe;
+    --highlight-color: #51D264;
+    --secundary-color: #3D63DD;
+    --paragraph-color: #2e2e2e;
+}
+
+body{
+    background-color: var(--bg-color);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+::selection{
+    background-color: var(--highlight-color);
+}
+
+.highlight{
+    color: var(--highlight-color);
+}
+
+.secundary{
+    color: var(--secundary-color);
+}
+
+.p-color{
+    color: var(--paragraph-color);
+}
+
+.bg-button{
+    background-color: var(--highlight-color);
+}
+
+.bg-footer{
+    background-color: var(--highlight-color);
+}
