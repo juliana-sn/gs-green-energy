@@ -42,3 +42,12 @@ body{
 .size-form{
     max-width: 600px;
 }
+
+.my-accordion{
+    max-width: 900px;
+}
+
+.img-accordion img{
+    max-width: 200px;
+}
+
