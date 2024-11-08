@@ -27,10 +27,18 @@ body{
     color: var(--paragraph-color);
 }
 
+.bg-secundary{
+    background-color: var(--secundary-color);
+}
+
 .bg-button{
     background-color: var(--highlight-color);
 }
 
 .bg-footer{
     background-color: var(--highlight-color);
+}
+
+.size-form{
+    max-width: 600px;
 }
