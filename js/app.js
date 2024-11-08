@@ -15,6 +15,7 @@ companies_investment.forEach(company =>
                     <p>Localização: ${company.city}, ${company.state}</p>
                     <p>Motivo para investimento: ${company.reason}</p>
                     <p>Taxa de retorno: ${company.financial_return}</p>
+                    <p>Data de retorno: ${company.date_return}</p>
                     <a href="" class="btn btn-outline-dark bg-secundary text-light mt-2 text-center">Investir</a>
                 </div>
               </button>
@@ -36,3 +37,36 @@ companies_investment.forEach(company =>
         </div>
     `
 )
+
+const cardsContainer = document.querySelector('#companies-hire');
+
+function renderCards(companies) {
+    cardsContainer.innerHTML = '';
+    companies.forEach(company => {
+        cardsContainer.innerHTML += `
+            <div class="card col card-hire m-2" style="width: 18rem;" data-city="${company.city}">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">${company.name}</h5>
+                    <p class="card-text">${company.city}</p>
+                    <a href="#" class="btn btn-primary">Contratar</a>
+                </div>
+            </div>
+        `;
+    });
+}
+
+renderCards(companies_hire);
+
+function filterCards() {
+    const input = document.getElementById('cityInput').value.toLowerCase();
+    const filteredCompanies = companies_hire.filter(company =>
+        company.city.toLowerCase().includes(input)
+    );
+
+    if (filteredCompanies.length === 0) {
+        document.querySelector('#companies-hire').innerHTML = '<p class="text-center">No momento não temos disponibilidade para essa cidade. Mas estamos trabalhando para expandir o nosso negócio o quanto antes!</p>';
+    } else {
+        renderCards(filteredCompanies);
+    }
+}

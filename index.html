@@ -49,7 +49,7 @@
         </div>
     </nav>
 
-    <main class="container-fluid mt-5 pt-4">
+    <main class="container-fluid mt-5 pt-4 mb-5 pb-5">
       <section class="row">
         <div class="col">
           <h1 class="highlight">Follow green energy</h1>
@@ -58,7 +58,7 @@
           <button class="btn btn-outline-dark bg-button">Conheça nossa causa</button>
         </div>
         <div class="col align-self-center">
-          <img src="./images/energia-renovavel (1).png" alt="" class="img-fluid">
+          <img src="./images/energy.png" alt="" class="img-fluid">
         </div>
       </section>
         
@@ -67,21 +67,21 @@
         <div class="row justify-content-center">
           <div class="col-12 col-md-4 card bg-green text-center mb-3 me-md-3" style="max-width: 18rem;">
               <div class="card-body">
-                <img src="./images/energia-renovavel (2).png" alt="" class="img-fluid mb-2">
+                <img src="./images/renewable-energies.png" alt="" class="img-fluid mb-2">
                 <h5 class="card-title">Ajudar na transição energética</h5>
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur</p>
               </div>
           </div>
           <div class="col-12 col-md-4 card bg-green text-center mb-3 me-md-3" style="max-width: 18rem;">
               <div class="card-body">
-                <img src="./images/planeta-terra.png" alt="" class="img-fluid mb-2">
+                <img src="./images/environment.png" alt="" class="img-fluid mb-2">
                 <h5 class="card-title">Contribuir para o meio ambiente</h5>
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, maiores.</p>
               </div>
           </div>
           <div class="col-12 col-md-4 card bg-green text-center mb-3" style="max-width: 18rem;">
               <div class="card-body">
-                <img src="./images/economize-energia (2).png" alt="" class="img-fluid mb-2">
+                <img src="./images/economy.png" alt="" class="img-fluid mb-2">
                 <h5 class="card-title">Economia</h5>
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, esse?</p>
               </div>
@@ -100,13 +100,23 @@
         </div>
       </section>
 
-      <section id="hire">
+      <section id="hire" class="mt-5 pt-2 mb-5">
+        <h3 class="text-center mb-3">Contrate energia limpa para sua casa ou empresa</h3>
+
+        <div class="container">
+          <label for="filter" class="form-input">Verifique a disponibilidade na sua cidade</label>
+          <input type="text" class="form-control mt-2 mb-3" id="cityInput" placeholder="Digite a cidade" onkeyup="filterCards()">
+        </div>
+
+        <div class="container row mx-auto mb-5" id="companies-hire">
+
+        </div>
 
       </section>
 
     </main>
 
-    <footer class="container-fluid bg-footer pt-5 pb-2 mt-4 text-dark">
+    <footer class="container-fluid bg-footer pt-5 pb-2 mt-5 text-dark">
         <div class="row mb-5">
             <div class="col-md mb-4 mb-md-0">
               <h3>Fale conosco</h3>

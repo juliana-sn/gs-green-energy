@@ -10,6 +10,7 @@ const companies_investment = [{
     value: 'R$2000',
     price: 'R$100',
     financial_return: '11%',
+    date_return: '05/06/2025',
     cnpj: '000000',
     email: 'exemplo@email.com',
     tel: '(99)99999-9999',
@@ -28,6 +29,7 @@ const companies_investment = [{
     value: 'R$2000',
     price: 'R$100',
     financial_return: '11%',
+    date_return: '05/06/2025',
     cnpj: '000000',
     email: 'exemplo@email.com',
     tel: '(99)99999-9999',
@@ -46,6 +48,7 @@ const companies_investment = [{
     value: 'R$2000',
     price: 'R$100',
     financial_return: '11%',
+    date_return: '05/06/2025',
     cnpj: '000000',
     email: 'exemplo@email.com',
     tel: '(99)99999-9999',
@@ -57,39 +60,43 @@ const companies_investment = [{
 
 const companies_hire = [
 {
-    name: 'CC BELEM',
+    name: 'Empresa 1',
     city: 'São Paulo',
     state: 'SP',
     type: 'Eólica',
     email: 'exemplo@email.com',
     tel: '(99)99999-9999',
     responsible: 'Fulano',
+    image: ''
 },
 {
-    name: 'CC BELEM',
-    city: 'São Paulo',
-    state: 'SP',
+    name: 'Empresa 2',
+    city: 'Rio de Janeiro',
+    state: 'RJ',
     type: 'Eólica',
     email: 'exemplo@email.com',
     tel: '(99)99999-9999',
     responsible: 'Fulano',
+    image: ''
 },
 {
-    name: 'CC BELEM',
+    name: 'Empresa 3',
     city: 'São Paulo',
     state: 'SP',
     type: 'Eólica',
     email: 'exemplo@email.com',
     tel: '(99)99999-9999',
     responsible: 'Fulano',
+    image: ''
 },
 {
-    name: 'CC BELEM',
-    city: 'São Paulo',
+    name: 'Empresa 4',
+    city: 'Suzano',
     state: 'SP',
     type: 'Eólica',
     email: 'exemplo@email.com',
     tel: '(99)99999-9999',
     responsible: 'Fulano',
+    image: ''
 }
 ]
