@@ -19,6 +19,10 @@ body{
     color: var(--highlight-color);
 }
 
+.highlight::selection{
+    background-color: var(--secundary-color);
+}
+
 .secundary{
     color: var(--secundary-color);
 }
@@ -43,11 +47,6 @@ body{
     max-width: 600px;
 }
 
-.my-accordion{
-    max-width: 900px;
+.accordion-item .row{
+    width: 100%;
 }
-
-.img-accordion img{
-    max-width: 200px;
-}
-
